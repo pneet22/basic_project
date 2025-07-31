@@ -1,0 +1,132 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#main {
+}
+
+.page1 h1 {
+  font-size: 8vw;
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: 10vh; /* Corrected '10vhvh' to '10vh' */
+}
+
+.page1 {
+  background-color: rgb(150, 44, 44);
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3vh;
+}
+
+.page1 p {
+  text-align: center;
+  font-weight: 400;
+  margin-top: 1.7vh;
+}
+
+.nav_conatiner{
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 30px;
+  position: relative;
+}
+
+.nav {
+  height: 7vh;
+  width: 33vw;
+  margin: 3vh; /* This margin will apply to the .nav itself */
+  background-color:rgba(255, 255, 255, 0.163); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+}
+
+#nav {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#nav-btn {
+  height: 6.4vh;
+  width: 9rem;
+  margin: 5px;
+  border: none;
+  border-radius: 30px;
+  background: transparent;
+  backdrop-filter: blur(8px);
+  color: #3f9dee;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  font-size: 3vh;
+}
+
+
+#nav-btn:hover {
+  background: rgba(214, 228, 230, 0.15);
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+#search input{
+    width: 13vw;
+    height: 5vh;
+    font-size: 20px;
+    border-radius: 15px;
+    padding: 0.3rem;
+    background-color: transparent ;
+     border: 1px solid rgb(68, 157, 234);
+    color: aliceblue;
+
+}
+#search button{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid rgb(68, 157, 234);
+}
+
+#search button:hover{
+  cursor: pointer;
+    background-color: rgb(68, 157, 234);;
+    color: black;
+    border: 1px solid #ffffff; ;
+}
+
+
+#search{
+  margin-right: 15px;
+}
+
+.nav_conatiner h1{
+  margin-left: 55px;
+  color: #cd3d3d;
+}
+
+.cards{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
