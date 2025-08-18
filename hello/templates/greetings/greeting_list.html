@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+  <body>
+    <h1>Greetings</h1>
+    <ul>
+      {% for g in greetings %}
+        <li>
+          <a href="{% url 'greeting_detail' g.id %}">{{ g.text }}</a>
+          — {{ g.created_at }}
+        </li>
+      {% empty %}
+        <li>No greetings yet.</li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
